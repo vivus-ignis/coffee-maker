@@ -1,0 +1,7 @@
+  Environment:
+    dev:
+      ExampleKey: AWS::NoValue
+    tst:
+      ExampleKey: AWS::NoValue
+    prd:
+      ExampleKey: AWS::NoValue

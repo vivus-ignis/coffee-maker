@@ -1,0 +1,6 @@
+{
+    "app_name": "my-aws-project",
+    "use_elasticbeanstalk": "n",
+    "use_rds": "n",
+    "use_reduced_costs_flag": "y"
+}

@@ -1,0 +1,6 @@
+source "https://rubygems.org"
+gem 'awspec', :git => 'https://github.com/vivus-ignis/awspec.git'
+# gem 'awspec', :path => './vendor/awspec'
+gem 'rake'
+gem 'rest-client'
+gem 'pry', :groups => [ :development ]
