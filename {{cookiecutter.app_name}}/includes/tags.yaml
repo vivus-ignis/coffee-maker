@@ -1,0 +1,10 @@
+        - Key: org:project
+          Value: !Ref ProjectName
+#ifdef ASG
+          PropagateAtLaunch: true
+#endif
+        - Key: app:environment
+          Value: !Ref DeploymentEnvironment
+#ifdef ASG
+          PropagateAtLaunch: true
+#endif
