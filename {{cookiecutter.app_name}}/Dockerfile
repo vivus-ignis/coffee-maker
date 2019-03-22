@@ -13,7 +13,7 @@ RUN apt-get update \
   python3 python3-dev libffi-dev libssl-dev python3-pip \
   graphviz \
   openssl \
-  crystal \
+  crystal
 RUN ln -s /usr/bin/pip3 /usr/bin/pip
 RUN gem install --no-ri --no-rdoc cfn-nag -v 0.3.53
 RUN gem install --no-ri --no-rdoc bundler -v 1.17.3
@@ -21,6 +21,7 @@ RUN pip3 install \
   yamllint==1.11.1 \
   awscli==1.15.60 \
   cfn-flip==1.0.3 \
+  aws-sam-translator==1.9.1 \
   cfn-lint==0.14.0 \
   pip-tools==2.0.2
 RUN git clone https://github.com/benbc/cloud-formation-viz.git \
