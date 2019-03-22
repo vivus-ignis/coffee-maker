@@ -1,0 +1,2 @@
+  IsProduction:
+    !Equals [ !Ref DeploymentEnvironment, prd ]
