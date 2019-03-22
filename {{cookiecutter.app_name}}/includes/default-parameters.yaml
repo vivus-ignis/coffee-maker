@@ -1,0 +1,58 @@
+  ProjectName:
+    Description: Name of the project
+    Type: String
+
+  DeploymentEnvironment:
+    Description: Deployment environment name
+    Type: String
+    AllowedValues: [ dev, tst, prd ]
+    ConstraintDescription: 'Environment can be one of: dev, tst, prd'
+
+  VPCId:
+    Description: VPC Id
+    Type: AWS::EC2::VPC::Id
+
+  VPCCIDR:
+    Description: VPC subnet CIDR
+    Type: String
+  
+  PrivateCIDR:
+    Description: Private subnet CIDR
+    Type: String
+    AllowedPattern: "^($[0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])(\/([0-9]|[1-2][0-9]|3[0-2]))$" 
+
+  DatabaseSubnetIdAZ1:
+    Description: Database subnet id in availability zone 1
+    Type: AWS::EC2::Subnet::Id
+
+  DatabaseSubnetIdAZ2:
+    Description: Database subnet id in availability zone 2
+    Type: AWS::EC2::Subnet::Id
+    
+  DatabaseSubnetIdAZ3:
+    Description: Database subnet id in availability zone 3
+    Type: AWS::EC2::Subnet::Id
+
+  ApplicationSubnetIdAZ1:
+    Description: Application subnet id in availability zone 1
+    Type: AWS::EC2::Subnet::Id
+
+  ApplicationSubnetIdAZ2:
+    Description: Application subnet id in availability zone 2
+    Type: AWS::EC2::Subnet::Id
+    
+  ApplicationSubnetIdAZ3:
+    Description: Application subnet id in availability zone 3
+    Type: AWS::EC2::Subnet::Id
+
+  LoadBalancingSubnetIdAZ1:
+    Description: LoadBalancing subnet id in availability zone 1
+    Type: AWS::EC2::Subnet::Id
+
+  LoadBalancingSubnetIdAZ2:
+    Description: LoadBalancing subnet id in availability zone 2
+    Type: AWS::EC2::Subnet::Id
+    
+  LoadBalancingSubnetIdAZ3:
+    Description: LoadBalancing subnet id in availability zone 3
+    Type: AWS::EC2::Subnet::Id
