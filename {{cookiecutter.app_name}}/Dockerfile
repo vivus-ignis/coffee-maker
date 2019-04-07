@@ -33,3 +33,5 @@ RUN git clone https://github.com/vivus-ignis/aws-wrap.git \
   && git checkout 476c03ab4dfbf06286f46c4915b90f95b1e6b3d6 \
   && crystal build ./src/aws-wrap.cr \
   && cp ./aws-wrap /usr/bin/
+ARG user=jenkins
+RUN useradd -M -d /coffee-maker $user
